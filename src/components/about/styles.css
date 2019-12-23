@@ -53,10 +53,10 @@
   color: black;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   body {
     background-image: url('../../assets/mobileBackground.png');
     background-size: cover;
     background-attachment: fixed;
   }
-}
+} */
