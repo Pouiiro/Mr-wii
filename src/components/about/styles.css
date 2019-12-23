@@ -8,9 +8,8 @@
 .portF {
   width: 70%;
   height: auto;
-  border-radius: 2%;
-  margin-top: 14rem;
-  margin-left: 10rem;
+  margin-top: calc(150px + (170 - 150) * ((100vw - 300px) / (1600 - 300)));
+  margin-left: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 .aboutCont h1 {
   font-size: calc(25px + (55 - 25) * ((100vw - 300px) / (1600 - 300)));
@@ -53,10 +52,19 @@
   color: black;
 }
 
-/* @media screen and (max-width: 800px) {
-  body {
+@media screen and (max-width: 600px) {
+  /* body {
     background-image: url('../../assets/mobileBackground.png');
     background-size: cover;
     background-attachment: fixed;
+  } */
+
+  .portF {
+    width: 92%;
+    display: block;
+    border-radius: 0%;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-left: auto;
   }
-} */
+}
