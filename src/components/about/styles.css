@@ -1,0 +1,54 @@
+.aboutCont {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: 'Montserrat', sans-serif;
+  /* -webkit-animation: fade-in 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: fade-in 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both; */
+}
+.portF {
+  width: 70%;
+  height: auto;
+  border-radius: 2%;
+  margin-top: 14rem;
+  margin-left: 10rem;
+}
+.aboutCont h1 {
+  font-size: calc(25px + (55 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+  text-align: left;
+}
+.aboutCont h2 {
+  margin-top: 5rem;
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+.aboutCont h3 {
+  text-align: left;
+  font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+.aboutCont p {
+  font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+  text-align: justify;
+  text-justify: inter-word;
+}
+.aboutCont ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.aboutCont li {
+  padding: 5px;
+  margin: 10px;
+  color: black;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+  display: inline-block;
+}
+.aboutCont li a {
+  text-decoration: none;
+  color: black;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
