@@ -29,25 +29,27 @@
   font-size: calc(25px + (65 - 25) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
   text-transform: uppercase;
+  color: rgb(103, 74, 170);
+  margin-left: -5vw;
 }
 
 .divCont h2 {
-  margin-top: 1%;
+  margin-top: calc(100px + (150 - 100) * ((100vw - 300px) / (1600 - 300)));
   font-size: calc(16px + (35 - 16) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .divCont p {
   font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.9em + (1.5 - 1.9) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .divCont button {
-  margin-top: 1.5%;
-  padding-top: calc(7px + (12 - 7) * ((100vw - 300px) / (1600 - 300)));
-  padding-bottom: calc(7px + (12 - 7) * ((100vw - 300px) / (1600 - 300)));
-  padding-left: calc(13px + (18 - 7) * ((100vw - 300px) / (1600 - 300)));
-  padding-right: calc(13px + (18 - 7) * ((100vw - 300px) / (1600 - 300)));
+  margin-top: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  padding-top: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-bottom: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-left: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-right: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
   font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 900;

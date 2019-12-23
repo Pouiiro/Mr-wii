@@ -25,7 +25,11 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary
   },
-  iconSiz: {}
+  iconSiz: {
+    fontSize: 25,
+    verticalAlign: 'middle',
+    marginRight: '6px'
+  }
 }))
 const About = () => {
   const classes = useStyles()
@@ -39,13 +43,16 @@ const About = () => {
             <h1>About Me</h1>
             <div style={{ marginLeft: '1vw' }}>
               <br />
-              <h2>
-                Hello, my Name is Ouail Bni aka Mr Wii you can call me Wael :)
-              </h2>
+              <h2>Hello, my Name is Ouail Bni,</h2>
               <br />
-              <p>I'm 23 years old, Computer Science Graduate.</p>
+              <p>I'm 23 years old, Computer Science Graduate,</p>
               <p>
-                A technologies enthusiast and a self-taught Front-End Web
+                I got my Bachelors Degree in 2018 and decided to learn web
+                developement and get better, also get familiar with new
+                practices in the field and stay updated with all the new things.
+              </p>
+              <p>
+                I am a technologies enthusiast and a self-taught Front-End Web
                 Developer and still learning everything the field has to offer,
                 i do have some Back-End knowledge such as PHP and NodeJs.
               </p>
@@ -54,33 +61,15 @@ const About = () => {
               <br />
               <ul>
                 <li>
-                  <EmailIcon
-                    style={{
-                      fontSize: 30,
-                      verticalAlign: 'middle',
-                      marginRight: '6px'
-                    }}
-                  />
+                  <EmailIcon className={classes.iconSiz} />
                   Ouailbni@gmail.com
                 </li>
                 <li>
-                  <PhoneIcon
-                    style={{
-                      fontSize: 30,
-                      verticalAlign: 'middle',
-                      marginRight: '6px'
-                    }}
-                  />
+                  <PhoneIcon className={classes.iconSiz} />
                   +212 6 39 03 23 34
                 </li>
                 <li>
-                  <PersonPinCircleIcon
-                    style={{
-                      fontSize: 30,
-                      verticalAlign: 'middle',
-                      marginRight: '6px'
-                    }}
-                  />
+                  <PersonPinCircleIcon className={classes.iconSiz} />
                   Nr 02 Lot El Waha, 52000 | Errachidia, Morocco
                 </li>
               </ul>
@@ -90,37 +79,19 @@ const About = () => {
               <ul>
                 <li>
                   <a href="https://www.facebook.com/Waeruu">
-                    <FacebookIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <FacebookIcon className={classes.iconSiz} />
                     facebook
                   </a>
                 </li>
                 <li>
                   <a href="https://twitter.com/BniWael">
-                    <TwitterIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <TwitterIcon className={classes.iconSiz} />
                     twitter
                   </a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/wael_bni/">
-                    <InstagramIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <InstagramIcon className={classes.iconSiz} />
                     instagram
                   </a>
                 </li>
@@ -138,37 +109,19 @@ const About = () => {
                 </li>
                 <li>
                   <a href="https://github.com/Mr-Wii">
-                    <GitHubIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <GitHubIcon className={classes.iconSiz} />
                     github
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/ouailbni/">
-                    <LinkedInIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <LinkedInIcon className={classes.iconSiz} />
                     linkedIn
                   </a>
                 </li>
                 <li>
                   <a href="https://www.youtube.com/user/eruKenkyushitsu">
-                    <YouTubeIcon
-                      style={{
-                        fontSize: 30,
-                        verticalAlign: 'middle',
-                        marginRight: '6px'
-                      }}
-                    />
+                    <YouTubeIcon className={classes.iconSiz} />
                     Youtube
                   </a>
                 </li>
