@@ -4,8 +4,8 @@
   font-family: 'Montserrat', sans-serif;
   margin-left: 6vw;
   margin-top: 18vh;
-  -webkit-animation: fade-in 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
-  animation: fade-in 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
 }
 
 @-webkit-keyframes fade-in {
@@ -62,7 +62,7 @@
   border-radius: 5%;
   margin-right: 15px;
 }
-.divCont button:last-child {
+.divCont #btn2 {
   background-color: #492e7c;
   border: 2px solid #492e7c;
 }
@@ -73,14 +73,14 @@
   border-color: transparent;
   background-color: transparent;
 }
-.divCont button:hover:last-child {
+.divCont #btn2:hover {
   box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
   color: #492e7c;
   border-color: transparent;
   background-color: transparent;
 }
 
-.demo a {
+/* .demo a {
   position: absolute;
   bottom: calc(-90px + (0 - (-90)) * ((100vw - 300px) / (1600 - 300)));
   left: 0;
@@ -97,8 +97,8 @@
 }
 .demo a:hover {
   opacity: 0.5;
-}
-section {
+} */
+/* section {
   position: relative;
   width: 100%;
   height: 100%;
@@ -164,5 +164,77 @@ section::after {
   }
   100% {
     opacity: 0;
+  }
+} */
+
+#cards {
+  margin-top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: calc(100px + (200 - 100) * ((100vw - 300px) / (1600 - 300)));
+}
+#cards p {
+  font-size: 17px;
+  text-align: center;
+}
+#cards button {
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+#cards h2 {
+  font-size: 30px;
+  text-align: center;
+}
+#cards a {
+  font-size: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  color: rgb(29, 112, 112);
+}
+
+.cardsCont h1 {
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(103, 74, 170);
+  margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 7vh;
+}
+.cardsCont ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cardsCont li {
+  padding: calc(4px + (10 - 4) * ((100vw - 300px) / (1600 - 300)));
+  margin: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
+  color: black;
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
+  display: inline-block;
+  width: calc(33px + (200 - 33) * ((100vw - 300px) / (1600 - 300)));
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* body {
+    background-image: url('../../assets/mobileBackground.png');
+    background-size: cover;
+    background-attachment: fixed;
+  } */
+
+  .cardsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
   }
 }
