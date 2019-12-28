@@ -35,7 +35,7 @@ const Home = () => {
         {/* <Typography
           component="div"
           style={{
-            height: '100vh'
+            height: '10078  vh'
           }}
         > */}
         <div className="divCont">
