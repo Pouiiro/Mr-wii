@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 
-.divCont {
+.wholeCont {
   font-family: 'Montserrat', sans-serif;
-  margin-left: 6vw;
-  margin-top: 18vh;
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
+.divCont {
+  margin-left: 6vw;
+  margin-top: 18vh;
 }
 
 @-webkit-keyframes fade-in {
@@ -80,96 +82,11 @@
   background-color: transparent;
 }
 
-/* .demo a {
-  position: absolute;
-  bottom: calc(-90px + (0 - (-90)) * ((100vw - 300px) / (1600 - 300)));
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding-top: 500px;
-  z-index: 2;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  font: normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-.demo a:hover {
-  opacity: 0.5;
-} */
-/* section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-section::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 80%;
-}
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  margin-left: -12px;
-  border-left: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
 #cards {
   margin-top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: calc(100px + (200 - 100) * ((100vw - 300px) / (1600 - 300)));
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 #cards p {
   font-size: 17px;
@@ -208,17 +125,13 @@ section::after {
   margin: 0;
   padding: 0;
   max-width: 1200px;
-  margin: 0 auto;
 }
 .cardsCont li {
-  padding: calc(4px + (10 - 4) * ((100vw - 300px) / (1600 - 300)));
-  margin: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)));
-  color: black;
-  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1600 - 300)));
+  margin: 50px;
+
+  /* margin-right: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))); */
   display: inline-block;
-  width: calc(33px + (200 - 33) * ((100vw - 300px) / (1600 - 300)));
-  vertical-align: middle;
-  text-align: center;
+  width: 15%;
 }
 
 @media screen and (max-width: 600px) {
@@ -236,5 +149,10 @@ section::after {
     color: rgb(103, 74, 170);
     margin-left: 0;
     margin-bottom: 7vh;
+  }
+  .cardsCont li {
+    margin: 5vw;
+    display: inline-block;
+    width: 20%;
   }
 }

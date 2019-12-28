@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import './form.css'
+import './style.css'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
@@ -39,16 +39,57 @@ class Contact extends React.Component {
     return (
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
           <Typography
             component="div"
             style={{
               height: '100vh',
-              marginTop: '10vh'
+              marginTop: '15vh'
             }}
           >
-            <div className="wrap-contact100">
+            <div className="contactDiv">
+              <h1>Contact Me</h1>
               <form
+                className="cf"
+                id="contact-form"
+                onSubmit={this.handleSubmit.bind(this)}
+                method="POST"
+              >
+                <div className="half left cf">
+                  <input
+                    type="text"
+                    id="input-name"
+                    placeholder="Full Name"
+                    name="name"
+                    // id="name"
+                    value={this.state.name}
+                    onChange={this.onNameChange.bind(this)}
+                  />
+                  <input
+                    type="email"
+                    id="input-email"
+                    placeholder="Email address"
+                    name="email"
+                    // id="email"
+                    value={this.state.email}
+                    onChange={this.onEmailChange.bind(this)}
+                  />
+                  <input type="text" id="input-subject" placeholder="Subject" />
+                </div>
+                <div className="half right cf">
+                  <textarea
+                    name="message"
+                    type="text"
+                    id="input-message"
+                    placeholder="Message"
+                    // id="message"
+                    value={this.state.message}
+                    onChange={this.onMessageChange.bind(this)}
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit" id="input-submit" />
+              </form>
+              {/* <form
                 id="contact-form"
                 onSubmit={this.handleSubmit.bind(this)}
                 method="POST"
@@ -59,15 +100,7 @@ class Contact extends React.Component {
                   className="wrap-input100 validate-input"
                   data-validate="Please enter your name"
                 >
-                  <input
-                    type="text"
-                    className="input100"
-                    placeholder="Full Name"
-                    name="name"
-                    id="name"
-                    value={this.state.name}
-                    onChange={this.onNameChange.bind(this)}
-                  />
+                  <input />
                   <span className="focus-input100"></span>
                 </div>
                 <div
@@ -106,7 +139,7 @@ class Contact extends React.Component {
                     Submit
                   </button>
                 </div>
-              </form>
+              </form> */}
             </div>
           </Typography>
         </Container>

@@ -15,7 +15,8 @@ const CollapseMenu = props => {
               range: [0, 0.2, 0.3, 1],
               output: [0, -20, 0, -200]
             })
-            .interpolate(openValue => `translate3d(0, ${openValue}px, 0`)
+            .interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
+          zIndex: '1'
         }}
       >
         <NavLinks>

@@ -17,6 +17,7 @@
     "react-dom": "^16.12.0",
     "react-error-boundary": "^1.2.5",
     "react-router-dom": "^5.1.2",
+    "react-router-scroll-top": "^0.2.1",
     "react-scripts": "3.3.0",
     "react-spring": "^8.0.27",
     "reactstrap": "^8.2.0",

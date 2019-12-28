@@ -1,0 +1,60 @@
+/* @import 'compass/css3'; */
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.contactDiv h1 {
+  text-align: center;
+  color: #a8a8a8;
+}
+.contactDiv form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+.contactDiv form input,
+.contactDiv form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  resize: none;
+}
+.contactDiv form #input-submit {
+  color: white;
+  background: #b832ca;
+  cursor: pointer;
+}
+.contactDiv form textarea {
+  height: 126px;
+}
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+.right {
+  width: 50%;
+}
+.left {
+  margin-right: 2%;
+}
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: ' ';
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
