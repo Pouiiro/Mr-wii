@@ -13,7 +13,7 @@ import { InlineIcon } from '@iconify/react'
 import discordIcon from '@iconify/icons-mdi/discord'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
-import portfol from './portfolio.jpg'
+import portfol from '../../assets/images/portfolio.jpg'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
 

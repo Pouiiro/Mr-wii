@@ -1,16 +1,16 @@
 import React from 'react'
 import Footer from 'rc-footer'
-import 'rc-footer/assets/index.css' // import 'rc-footer/asssets/index.less';
-import logo from '../../assets/logo.svg'
-import fb from '../../assets/facebook.svg'
-import ig from '../../assets/instagram.svg'
-import wa from '../../assets/whatsapp.svg'
-import twt from '../../assets/twitter.svg'
-import li from '../../assets/linkedin.svg'
-import gh from '../../assets/github.svg'
-import mrt from '../../assets/mrtodo.svg'
-import mrl from '../../assets/mrlgd.svg'
-import wp from '../../assets/wp.svg'
+import 'rc-footer/assets/index.css'
+import logo from '../../assets/svg/logo.svg'
+import fb from '../../assets/svg/facebook.svg'
+import ig from '../../assets/svg/instagram.svg'
+import wa from '../../assets/svg/whatsapp.svg'
+import twt from '../../assets/svg/twitter.svg'
+import li from '../../assets/svg/linkedin.svg'
+import gh from '../../assets/svg/github.svg'
+import mrt from '../../assets/svg/mrtodo.svg'
+import mrl from '../../assets/svg/mrlgd.svg'
+import wp from '../../assets/svg/wp.svg'
 
 const Ftr = () => {
   return (
@@ -47,11 +47,11 @@ const Ftr = () => {
               {
                 title: 'Contact Me',
                 url: 'https://mr-wii.com/contact'
-              },
-              {
-                title: 'My Services',
-                url: 'https://mr-wii.com/services'
               }
+              // {
+              //   title: 'My Services',
+              //   url: 'https://mr-wii.com/services'
+              // }
             ]
           },
           {
