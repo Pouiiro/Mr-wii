@@ -3,6 +3,7 @@ import './style.css'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
+import { Redirect } from 'react-router-dom'
 
 const encode = data => {
   return Object.keys(data)
@@ -24,7 +25,7 @@ class Contact extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...this.state })
     })
-      .then(() => alert('Success!'))
+      .then(() => alert('success'))
       .catch(error => alert(error))
 
     e.preventDefault()
