@@ -1,37 +1,96 @@
 /* @import 'compass/css3'; */
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
-
+.contactDiv {
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
 .contactDiv h1 {
-  text-align: center;
-  color: #a8a8a8;
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(103, 74, 170);
 }
 .contactDiv form {
   max-width: 600px;
   text-align: center;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 .contactDiv form input,
 .contactDiv form textarea {
   border: 0;
   outline: 0;
-  padding: 1em;
+  padding: 1.5em;
   display: block;
   width: 100%;
-  margin-top: 1em;
+  /* margin-top: 1.5em; */
+  margin-bottom: 1em;
   font-family: 'Merriweather', sans-serif;
   resize: none;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.contactDiv form input:focus,
+.contactDiv form textarea:focus {
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.15);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.contactDiv input::placeholder {
+  color: #4b2354;
+}
+.contactDiv textarea::placeholder {
+  color: #4b2354;
 }
 .contactDiv form #input-submit {
   color: white;
-  background: #b832ca;
+  margin-top: 5vh;
+  padding: 1em;
+  background-color: #bd59d4;
+  border-radius: 21px;
   cursor: pointer;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+}
+.contactDiv form #input-submit:hover {
+  background-color: #4b2354;
+  box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
 }
 .contactDiv form textarea {
   height: 126px;
 }
 .half {
   float: left;
-  width: 48%;
+  width: 100%;
   margin-bottom: 1em;
 }
 .right {
@@ -57,4 +116,44 @@
 }
 .cf:after {
   clear: both;
+}
+
+.thankYou {
+  text-align: center;
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+}
+
+.thankYou h1 {
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+  color: rgb(103, 74, 170);
+}
+.thankYou h2 {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+}
+.thankYou button {
+  margin-top: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
+  padding-top: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-bottom: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-left: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
+  padding-right: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 900;
+  color: #fff;
+  background-color: #a034bb;
+  border: 2px solid #a034bb;
+  cursor: pointer;
+  width: max-content;
+  transition: 0.25s ease;
+  border-radius: 5%;
+}
+.thankYou button:hover {
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
+  color: #a034bb;
+  border-color: transparent;
+  background-color: transparent;
 }

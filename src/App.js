@@ -6,7 +6,6 @@ import Contact from './pages/contact/contact'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Ftr from './components/footer/footer'
 import ScrollToTop from 'react-router-scroll-top'
-import Thanks from './pages/contact/thanks'
 
 import GlobalStyle from './styles/Global'
 
@@ -31,7 +30,6 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
-            <Route path="/thanks" component={Thanks} />
           </Switch>
           <Ftr />
           <GlobalStyle />
