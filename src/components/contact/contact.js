@@ -49,8 +49,6 @@ class Contact extends React.Component {
               <form
                 className="cf"
                 id="contact-form"
-                name="contact"
-                netlify
                 onSubmit={this.handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
@@ -81,7 +79,6 @@ class Contact extends React.Component {
                     placeholder="Message"
                     value={message}
                     onChange={this.handleChange}
-                    // id="message"
                   ></textarea>
                 </div>
                 <input type="submit" value="Submit" id="input-submit" />
