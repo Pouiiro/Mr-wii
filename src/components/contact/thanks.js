@@ -2,7 +2,7 @@ import React from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import wiiro from '../../assets/images/mrWii.png'
+import wiiro from '../../assets/images/mrWii.webp'
 import { NavLink } from 'react-router-dom'
 
 const Thanks = () => {
