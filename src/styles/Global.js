@@ -21,7 +21,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     overflow: scroll;
     overflow-x: hidden; 
-    
   }
   ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */

@@ -1,16 +1,18 @@
 import React from 'react'
 import Footer from 'rc-footer'
 import 'rc-footer/assets/index.css'
-import logo from '../../assets/svg/logo.svg'
-import fb from '../../assets/svg/facebook.svg'
-import ig from '../../assets/svg/instagram.svg'
-import wa from '../../assets/svg/whatsapp.svg'
-import twt from '../../assets/svg/twitter.svg'
-import li from '../../assets/svg/linkedin.svg'
-import gh from '../../assets/svg/github.svg'
-import mrt from '../../assets/svg/mrtodo.svg'
-import mrl from '../../assets/svg/mrlgd.svg'
-import wp from '../../assets/svg/wp.svg'
+import logo from 'assets/svg/logo.svg'
+import fb from 'assets/svg/facebook.svg'
+import ig from 'assets/svg/instagram.svg'
+import wa from 'assets/svg/whatsapp.svg'
+import twt from 'assets/svg/twitter.svg'
+import li from 'assets/svg/linkedin.svg'
+import gh from 'assets/svg/github.svg'
+import mrt from 'assets/svg/mrtodo.svg'
+import mrl from 'assets/svg/mrlgd.svg'
+import wp from 'assets/svg/wp.svg'
+
+const fror = `Made with ❤️ by Mr Wii`
 
 const Ftr = () => {
   return (
@@ -126,7 +128,7 @@ const Ftr = () => {
             ]
           }
         ]}
-        bottom="Made with ❤️ by Mr Wii"
+        bottom={fror}
       />
     </div>
   )

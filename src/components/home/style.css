@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
-html,
-body {
-  background-color: #ffffff !important;
-}
 .wholeCont {
-  font-family: 'Montserrat', sans-serif;
   -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
   animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s both;
+  font-family: 'Montserrat', sans-serif;
 }
 .divCont {
   margin-left: 6vw;
@@ -88,8 +83,6 @@ body {
 #cards {
   margin-top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: calc(100px + (200 - 100) * ((100vw - 300px) / (1600 - 300)));
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 #cards p {
   font-size: 17px;
@@ -123,27 +116,31 @@ body {
   margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 7vh;
 }
-.cardsCont ul {
+.skillsCont h1 {
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(103, 74, 170);
+  margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 7vh;
+}
+.skillsCont ul {
   list-style: none;
   margin: 0;
   padding: 0;
   max-width: 1200px;
 }
-.cardsCont li {
+.skillsCont li {
   margin: 50px;
-
-  /* margin-right: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))); */
   display: inline-block;
   width: 15%;
 }
+.skillsCont img {
+  width: 60%;
+}
 
 @media screen and (max-width: 600px) {
-  /* body {
-    background-image: url('../../assets/mobileBackground.png');
-    background-size: cover;
-    background-attachment: fixed;
-  } */
-
   .cardsCont h1 {
     font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
@@ -153,9 +150,52 @@ body {
     margin-left: 0;
     margin-bottom: 7vh;
   }
-  .cardsCont li {
-    margin: 5vw;
+  .skillsCont li {
+    margin: 5.3vw;
     display: inline-block;
     width: 20%;
+  }
+  .skillsCont img {
+    width: 100%;
+  }
+
+  .skillsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cardsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
+  }
+  .skillsCont li {
+    display: inline-block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skillsCont img {
+    width: 50%;
+  }
+
+  .skillsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
   }
 }

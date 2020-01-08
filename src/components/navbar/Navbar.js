@@ -26,16 +26,31 @@ const Navbar = props => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <NavLink activeStyle={{ color: '#b832ca' }} to="/" exact>
+            <NavLink
+              activeStyle={{
+                color: 'rgb(204, 158, 255)'
+              }}
+              to="/"
+              exact
+            >
               Home
             </NavLink>
-            {/* <NavLink to="/services" exact>
-              Services
-            </NavLink> */}
-            <NavLink activeStyle={{ color: '#b832ca' }} to="/contact" exact>
+            <NavLink
+              activeStyle={{
+                color: 'rgb(204, 158, 255)'
+              }}
+              to="/contact"
+              exact
+            >
               Contact
             </NavLink>
-            <NavLink activeStyle={{ color: '#b832ca' }} to="/about" exact>
+            <NavLink
+              activeStyle={{
+                color: 'rgb(204, 158, 255)'
+              }}
+              to="/about"
+              exact
+            >
               About
             </NavLink>
           </NavLinks>

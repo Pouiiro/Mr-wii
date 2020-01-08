@@ -3,7 +3,6 @@ import './style.css'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import { Redirect } from 'react-router-dom'
 import Thanks from './thanks'
 
 const encode = data => {

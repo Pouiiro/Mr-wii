@@ -21,22 +21,47 @@ const CollapseMenu = props => {
       >
         <NavLinks>
           <li>
-            <NavLink to="/" exact>
+            <NavLink
+              activeStyle={{
+                color: '#b832ca',
+                fontSize: '1.4rem',
+                lineHeight: '2',
+                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
+                fontWeight: '600'
+              }}
+              to="/"
+              exact
+            >
               Home
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/services" exact>
-              Services
-            </NavLink>
-          </li> */}
           <li>
-            <NavLink to="/contact" exact>
+            <NavLink
+              activeStyle={{
+                color: '#b832ca',
+                fontSize: '1.4rem',
+                lineHeight: '2',
+                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
+                fontWeight: '600'
+              }}
+              to="/contact"
+              exact
+            >
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" exact>
+            <NavLink
+              activeStyle={{
+                color: '#b832ca',
+                fontSize: '1.4rem',
+                lineHeight: '2',
+                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
+                fontWeight: '600'
+              }}
+              to="/about"
+              exact
+            >
               About
             </NavLink>
           </li>
@@ -72,10 +97,5 @@ const NavLinks = styled.ul`
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-      color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
-    }
   }
 `
