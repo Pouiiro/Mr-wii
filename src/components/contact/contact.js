@@ -4,6 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Thanks from './thanks'
+import { NavLink } from 'react-router-dom'
 
 const encode = data => {
   return Object.keys(data)
@@ -45,12 +46,33 @@ class Contact extends React.Component {
             <Typography
               component="div"
               style={{
-                height: '100vh',
                 marginTop: '15vh'
               }}
             >
-              <div className="contactDiv">
+              <div className="thankYou">
                 <h1>Contact Me</h1>
+
+                <h2>
+                  You can find me anywhere here in my
+                  <NavLink style={{ textDecoration: 'none' }} to="/about" exact>
+                    <h3>social media</h3>
+                  </NavLink>
+                </h2>
+
+                <h2>Or you can get in touch using the form down below:</h2>
+              </div>
+            </Typography>
+          </Container>
+          <Container maxWidth="md">
+            <Typography
+              component="div"
+              style={{
+                height: '80vh'
+                // marginTop: '15vh'
+              }}
+            >
+              <div className="contactDiv">
+                {/* <h1>Contact Me</h1> */}
                 <form
                   className="cf"
                   id="contact-form"

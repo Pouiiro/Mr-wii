@@ -2,7 +2,7 @@ import React from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import wiiro from '../../assets/images/mrWii.webp'
+import wiiro from '../../assets/images/mrWii.png'
 import { NavLink } from 'react-router-dom'
 
 const Thanks = () => {
@@ -18,8 +18,8 @@ const Thanks = () => {
           }}
         >
           <div className="thankYou">
-            <img src={wiiro} alt="Thank You"></img>
             <h1>Thank You!</h1>
+            <img src={wiiro} alt="Thank You"></img>
             <h2>Will get back at you as soon as possible!</h2>
             <h2>Have a nice day</h2>
             <h2>
@@ -28,7 +28,7 @@ const Thanks = () => {
               </span>
             </h2>
             <NavLink to="/" exact>
-              <button id="btn1">Take me home</button>
+              <button id="input-submit">Take me home</button>
             </NavLink>
           </div>
         </Typography>

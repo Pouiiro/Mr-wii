@@ -1,15 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from 'assets/images/logo-min.webp'
-
 const Brand = () => {
-  return <Image src={logo} alt="Company Logo" />
+  return <Span>Mr Wii™</Span>
 }
 
 export default Brand
 
-const Image = styled.img`
+const Span = styled.span`
   height: 100%;
   margin: auto 0;
+  font-family: 'Geo', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 73px;
 `

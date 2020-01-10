@@ -4,67 +4,73 @@
   font-family: 'Montserrat', sans-serif;
 }
 .divCont {
-  margin-left: 6vw;
-  margin-top: 18vh;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  margin-left: 5vw;
+  margin-top: 25vh;
+  flex-grow: 1;
 }
 
 .divCont h1 {
-  font-size: calc(25px + (65 - 25) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
-  text-transform: uppercase;
-  color: rgb(103, 74, 170);
-  margin-left: -5vw;
+  color: #5e3da5;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 86px;
+  position: relative;
+  z-index: 1;
 }
 
 .divCont h2 {
-  margin-top: calc(100px + (150 - 100) * ((100vw - 300px) / (1600 - 300)));
-  font-size: calc(16px + (35 - 16) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+  margin-left: 9rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 20px;
+  color: #9858e9;
+  position: relative;
+  z-index: 1;
 }
 
 .divCont p {
-  font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.9em + (1.5 - 1.9) * ((100vw - 300px) / (1600 - 300)));
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 70px;
+  margin-left: 12rem;
+  color: #9858e9;
+  position: relative;
+  z-index: 1;
 }
 
 .divCont button {
-  margin-top: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
   padding-top: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
   padding-bottom: calc(7px + (10 - 7) * ((100vw - 300px) / (1600 - 300)));
   padding-left: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
   padding-right: calc(13px + (15 - 7) * ((100vw - 300px) / (1600 - 300)));
-  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 900;
   color: #fff;
   background-color: #c906fa;
   border: 2px solid #c906fa;
   cursor: pointer;
-  width: max-content;
+  width: 35%;
   transition: 0.25s ease;
   border-radius: 5%;
-  margin-right: 15px;
+  margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
 }
-.divCont #btn2 {
+
+#btn2 {
   background-color: #492e7c;
   border: 2px solid #492e7c;
+  margin-left: 40%;
+}
+
+#btn1 {
+  margin-left: 5%;
 }
 
 .divCont button:hover {
@@ -73,6 +79,7 @@
   border-color: transparent;
   background-color: transparent;
 }
+
 .divCont #btn2:hover {
   box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
   color: #492e7c;
@@ -81,25 +88,28 @@
 }
 
 #cards {
-  margin-top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300)));
+  /* margin-top: calc(25px + (120 - 25) * ((100vw - 300px) / (1600 - 300))); */
   margin-bottom: calc(100px + (200 - 100) * ((100vw - 300px) / (1600 - 300)));
 }
 #cards p {
-  font-size: 17px;
+  font-size: calc(10px + (17 - 10) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
 }
+#cards p:hover {
+  color: black;
+}
 #cards button {
-  font-size: 15px;
+  font-size: calc(11px + (15 - 11) * ((100vw - 300px) / (1600 - 300)));
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
 }
 #cards h2 {
-  font-size: 30px;
+  font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
 }
 #cards a {
-  font-size: 16px;
+  font-size: calc(9px + (15 - 9) * ((100vw - 300px) / (1600 - 300)));
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -115,6 +125,10 @@
   color: rgb(103, 74, 170);
   margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 7vh;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 130px 50px/4px 2px;
+  padding: 10px;
 }
 .skillsCont h1 {
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
@@ -124,6 +138,10 @@
   color: rgb(103, 74, 170);
   margin-left: calc(80px + ((-80) - 80) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 7vh;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 130px 50px/4px 2px;
+  padding: 10px;
 }
 .skillsCont ul {
   list-style: none;
@@ -140,7 +158,44 @@
   width: 60%;
 }
 
-@media screen and (max-width: 600px) {
+/* BreakPoint and Mobile css */
+
+@media only screen and (min-width: 100px) and (max-width: 320px) {
+  .cardsImg {
+    position: static !important;
+  }
+  .divCont button {
+    width: 60%;
+  }
+  .buttCont {
+    margin-top: 20%;
+  }
+  #btn2 {
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  #btn1 {
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  .divCont h1 {
+    color: #5e3da5;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  .divCont h2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .divCont p {
+    font-size: 10px;
+    line-height: 25px;
+  }
+
   .cardsCont h1 {
     font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
@@ -169,7 +224,106 @@
     margin-bottom: 7vh;
   }
 }
-@media screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 600px) and (min-width: 321px) {
+  .cardsImg {
+    position: static !important;
+  }
+  .divCont button {
+    width: 60%;
+  }
+  .buttCont {
+    margin-top: 40%;
+  }
+  #btn2 {
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  #btn1 {
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  .divCont h1 {
+    color: #5e3da5;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+  }
+
+  .divCont h2 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .divCont p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .cardsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
+  }
+  .skillsCont li {
+    margin: 5.3vw;
+    display: inline-block;
+    width: 20%;
+  }
+  .skillsCont img {
+    width: 100%;
+  }
+
+  .skillsCont h1 {
+    font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(103, 74, 170);
+    margin-left: 0;
+    margin-bottom: 7vh;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .divCont button {
+    width: 45%;
+  }
+  .cardsImg {
+    margin-bottom: 5vh;
+  }
+  #btn2 {
+    margin-left: 46%;
+  }
+  #btn1 {
+    margin-left: 0%;
+  }
+  .divCont h1 {
+    color: #5e3da5;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(25px + (80 - 25) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .divCont {
+    margin-left: 2vw;
+    margin-top: 20vh;
+    flex-grow: 1;
+  }
+
+  .divCont h2 {
+    font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 20px;
+  }
+
+  .divCont p {
+    font-size: calc(6px + (26 - 6) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 30px;
+  }
   .cardsCont h1 {
     font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
     line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
@@ -197,5 +351,22 @@
     color: rgb(103, 74, 170);
     margin-left: 0;
     margin-bottom: 7vh;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
