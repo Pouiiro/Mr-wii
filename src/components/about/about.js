@@ -87,11 +87,10 @@ const About = () => {
           </Grid>
           <Grid item xs={12} sm={6}>
             <img className="portF" src={portfol} alt="PortfolioPic"></img>
-            <h2 id="commentPic">Taken in Oujda 2017 by Me, More in my IG.</h2>
           </Grid>
           <Grid item xs={12}>
             <div className="aboutCont" id="aboutC1">
-              <h3>Get in touch using the web :</h3>
+              <h3>Or get in touch using the web :</h3>
               <br />
               <ul>
                 <li>
@@ -101,7 +100,7 @@ const About = () => {
                     rel="noopener noreferrer"
                   >
                     <FacebookIcon className={classes.iconSiz1} />
-                    Facebook
+                    facebook
                   </a>
                 </li>
                 <li>
@@ -111,7 +110,7 @@ const About = () => {
                     rel="noopener noreferrer"
                   >
                     <TwitterIcon className={classes.iconSiz1} />
-                    Twitter
+                    twitter
                   </a>
                 </li>
                 <li>
@@ -139,12 +138,12 @@ const About = () => {
                     icon={discordIcon}
                     style={{
                       fontSize:
-                        'calc(33px + (40 - 33) * ((100vw - 300px) / (1600 - 300)))',
+                        'calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300)))',
                       verticalAlign: 'middle',
                       marginRight: '6px'
                     }}
                   />
-                  <span>Wael#4667</span>
+                  Wael#4667
                 </li>
                 <li>
                   <a
@@ -153,7 +152,7 @@ const About = () => {
                     rel="noopener noreferrer"
                   >
                     <GitHubIcon className={classes.iconSiz1} />
-                    Github
+                    github
                   </a>
                 </li>
                 <li>
@@ -163,7 +162,7 @@ const About = () => {
                     rel="noopener noreferrer"
                   >
                     <LinkedInIcon className={classes.iconSiz1} />
-                    LinkedIn
+                    linkedIn
                   </a>
                 </li>
                 <li>

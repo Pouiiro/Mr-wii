@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css?family=Geo|Montserrat|Poppins|Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');;
 
   *,
   *::after,
@@ -21,8 +21,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     overflow: scroll;
     overflow-x: hidden; 
-    background-color: #fff !important;
-
+  }
   ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
