@@ -13,7 +13,7 @@ const CollapseMenu = props => {
           transform: open
             .interpolate({
               range: [0, 0.2, 0.3, 1],
-              output: [0, -20, 0, -200]
+              output: [0, 0, 0, -200]
             })
             .interpolate(openValue => `translate3d(0, ${openValue}px, 0`),
           zIndex: '1'
@@ -23,7 +23,7 @@ const CollapseMenu = props => {
           <li>
             <NavLink
               activeStyle={{
-                color: '#b832ca',
+                color: '#000000',
                 fontSize: '1.4rem',
                 lineHeight: '2',
                 fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
@@ -38,7 +38,7 @@ const CollapseMenu = props => {
           <li>
             <NavLink
               activeStyle={{
-                color: '#b832ca',
+                color: '#000000',
                 fontSize: '1.4rem',
                 lineHeight: '2',
                 fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
@@ -53,7 +53,7 @@ const CollapseMenu = props => {
           <li>
             <NavLink
               activeStyle={{
-                color: '#b832ca',
+                color: '#000000',
                 fontSize: '1.4rem',
                 lineHeight: '2',
                 fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
@@ -66,6 +66,7 @@ const CollapseMenu = props => {
             </NavLink>
           </li>
         </NavLinks>
+        <Hr />
       </CollapseWrapper>
     )
   }
@@ -74,10 +75,15 @@ const CollapseMenu = props => {
 
 export default CollapseMenu
 
+const Hr = styled.hr`
+  width: 100%;
+  margin: 0 auto;
+`
+
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: #fff;
   position: fixed;
-  top: 4.5rem;
+  top: 7.1rem;
   left: 0;
   right: 0;
 `
@@ -87,13 +93,13 @@ const NavLinks = styled.ul`
   padding: 2rem 1rem 2rem 2rem;
 
   & li {
-    transition: all 300ms linear 0s;
+    transition: all 500ms linear 0s;
   }
 
   & a {
     font-size: 1.4rem;
     line-height: 2;
-    color: #dfe6e9;
+    color: #676767;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
