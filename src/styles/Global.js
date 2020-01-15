@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css?family=Geo|Montserrat|Poppins|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Geo|Montserrat|Merriweather|Poppins|Roboto&display=swap');
 
   *,
   *::after,

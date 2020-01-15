@@ -1,14 +1,12 @@
 import React from 'react'
 import Contact from 'components/contact/contact'
-import { SEO } from 'components/SEO'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import { Layout, SEO } from 'components/common/'
 
 export default () => {
   return (
-    <React.Fragment>
+    <Layout>
       <SEO title="Contact" type="Organization" location="/contact" />
-      <CssBaseline />
-      <Contact />{' '}
-    </React.Fragment>
+      <Contact />
+    </Layout>
   )
 }

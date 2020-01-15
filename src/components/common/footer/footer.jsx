@@ -50,10 +50,6 @@ const Ftr = () => {
                 title: 'Contact Me',
                 url: 'https://mr-wii.com/contact'
               }
-              // {
-              //   title: 'My Services',
-              //   url: 'https://mr-wii.com/services'
-              // }
             ]
           },
           {

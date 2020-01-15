@@ -5,10 +5,16 @@ import { useSpring, animated } from 'react-spring'
 
 const CollapseMenu = props => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 })
-
+  const styleAc = {
+    color: '#000000',
+    fontSize: '1.4rem',
+    lineHeight: '2',
+    fontWeight: '600'
+  }
   if (props.navbarState === true) {
     return (
       <CollapseWrapper
+        onClick={props.handleNavbar}
         style={{
           transform: open
             .interpolate({
@@ -21,47 +27,17 @@ const CollapseMenu = props => {
       >
         <NavLinks>
           <li>
-            <NavLink
-              activeStyle={{
-                color: '#000000',
-                fontSize: '1.4rem',
-                lineHeight: '2',
-                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
-                fontWeight: '600'
-              }}
-              to="/"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/" exact>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              activeStyle={{
-                color: '#000000',
-                fontSize: '1.4rem',
-                lineHeight: '2',
-                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
-                fontWeight: '600'
-              }}
-              to="/contact"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/contact" exact>
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink
-              activeStyle={{
-                color: '#000000',
-                fontSize: '1.4rem',
-                lineHeight: '2',
-                fontFamily: '"Roboto" "Helvetica", "Arial", sans-serif',
-                fontWeight: '600'
-              }}
-              to="/about"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/about" exact>
               About
             </NavLink>
           </li>

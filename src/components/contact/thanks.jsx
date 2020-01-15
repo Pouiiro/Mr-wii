@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import wiiro from 'assets/images/mrWii.png'
 import { NavLink } from 'react-router-dom'
-import { SEO } from 'components/SEO'
+import { SEO } from 'components/common/SEO'
 
 const Thanks = () => {
   return (

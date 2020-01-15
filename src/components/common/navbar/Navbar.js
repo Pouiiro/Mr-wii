@@ -19,48 +19,21 @@ const Navbar = props => {
     delay: 800,
     config: config.wobbly
   })
-
+  const styleAc = { color: '#000000' }
   return (
     <>
       <NavBar style={barAnimation}>
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <NavLink
-              activeStyle={{
-                color: '#000000'
-              }}
-              to="/"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/" exact>
               Home
             </NavLink>
-            {/* <NavLink
-              activeStyle={{
-                color: '#000000'
-              }}
-              to="/services"
-              exact
-            >
-              Services
-            </NavLink> */}
-            <NavLink
-              activeStyle={{
-                color: '#000000'
-              }}
-              to="/contact"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/contact" exact>
               Contact
             </NavLink>
             <Span />
-            <NavLink
-              activeStyle={{
-                color: '#000000'
-              }}
-              to="/about"
-              exact
-            >
+            <NavLink activeStyle={styleAc} to="/about" exact>
               About
             </NavLink>
           </NavLinks>

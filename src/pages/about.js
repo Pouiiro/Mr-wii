@@ -1,15 +1,12 @@
 import React from 'react'
 import About from 'components/about/about'
-import { SEO } from 'components/SEO'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Container from '@material-ui/core/Container'
+import { Layout, SEO } from 'components/common/'
 
 export default () => {
   return (
-    <Container maxWidth="lg">
+    <Layout>
       <SEO title="About" type="Organization" location="/about" />
-      <CssBaseline />
       <About />
-    </Container>
+    </Layout>
   )
 }
