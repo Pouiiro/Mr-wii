@@ -7,14 +7,14 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import andzoa from 'assets/images/andzoa.png'
+import andzoa from 'assets/images/andzoa.webp'
 import mrTodo from 'assets/images/mrTodo.webp'
 import mrLegend from 'assets/images/mrLegend.webp'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-import img1 from 'assets/images/shape3.png'
+import img1 from 'assets/images/shape3.webp'
 import styled from 'styled-components'
-import wiiro from 'assets/images/mrWii.png'
+import wiiro from 'assets/images/mrWii.webp'
 
 const useStyles = makeStyles({
   card: {

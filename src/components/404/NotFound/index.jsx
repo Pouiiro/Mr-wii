@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import wiiro from 'assets/images/mrWii.png'
+import wiiro from 'assets/images/mrWii.webp'
 
 export default () => (
   <Container maxWidth="md">

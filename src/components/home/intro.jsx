@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import img from 'assets/images/shape1.png'
-import img1 from 'assets/images/shape2.png'
+import img from 'assets/images/shape1.webp'
+import img1 from 'assets/images/shape2.webp'
 
 import Grid from '@material-ui/core/Grid'
 

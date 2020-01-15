@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Thumbnail from 'assets/images/mrWii.png'
+import Thumbnail from 'assets/images/mrWii.webp'
 import {
   url,
   defaultTitle,
