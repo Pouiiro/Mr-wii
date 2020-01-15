@@ -4,12 +4,14 @@ import Intro from 'components/home-fragments/intro'
 import Projects from 'components/home-fragments/projects'
 import Skills from 'components/home-fragments/skills'
 import Container from '@material-ui/core/Container'
+import { SEO } from 'components/SEO'
 
 import './style.css'
 
 const Home = () => {
   return (
     <React.Fragment>
+      <SEO title="Hello world!" type="Organization" />
       <CssBaseline />
       <Container maxWidth="xl" className="wholeCont">
         <Intro />

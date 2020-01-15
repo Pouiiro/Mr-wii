@@ -16,6 +16,7 @@ import Grid from '@material-ui/core/Grid'
 import portfol from 'assets/images/portfolio.webp'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
+import { SEO } from 'components/SEO'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,6 +39,7 @@ const About = () => {
 
   return (
     <Container maxWidth="lg">
+      <SEO title="About" type="Organization" location="/about" />
       <CssBaseline />
       <div className={classes.root}>
         <Grid container spacing={0}>

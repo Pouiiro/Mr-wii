@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Navbar from 'components/navbar/Navbar'
-import Home from 'pages/home/index'
-import About from 'pages/about/about'
-import Contact from 'pages/contact/contact'
+import Home from 'pages/home'
+import About from 'pages/about'
+import Contact from 'pages/contact'
+import NotFoundPage from 'pages/404'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Ftr from 'components/footer/footer'
 import ScrollToTop from 'react-router-scroll-top'
@@ -30,6 +31,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
+            <Route path="*" component={NotFoundPage} />
           </Switch>
           <Ftr />
           <GlobalStyle />

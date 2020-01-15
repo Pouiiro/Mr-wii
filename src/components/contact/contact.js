@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Thanks from './thanks'
 import { NavLink } from 'react-router-dom'
+import { SEO } from 'components/SEO'
 
 const encode = data => {
   return Object.keys(data)
@@ -41,6 +42,7 @@ class Contact extends React.Component {
     if (this.state.done === false) {
       return (
         <React.Fragment>
+          <SEO title="Contact" type="Organization" location="/contact" />
           <CssBaseline />
           <Container maxWidth="md">
             <Typography

@@ -2,12 +2,19 @@ import React from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
-import wiiro from '../../assets/images/mrWii.png'
+import wiiro from 'assets/images/mrWii.png'
 import { NavLink } from 'react-router-dom'
+import { SEO } from 'components/SEO'
 
 const Thanks = () => {
   return (
     <React.Fragment>
+      <SEO
+        location="/contact"
+        type="Organization"
+        title="Thank You!"
+        description="Thank you for contacting me!"
+      />
       <CssBaseline />
       <Container maxWidth="md">
         <Typography

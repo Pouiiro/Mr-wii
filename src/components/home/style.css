@@ -24,7 +24,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 20px;
   color: #9858e9;
   position: relative;
@@ -35,9 +35,9 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 70px;
-  margin-left: 12rem;
+  margin-left: 17rem;
   color: #9858e9;
   position: relative;
   z-index: 1;
@@ -189,11 +189,13 @@
   .divCont h2 {
     font-size: 12px;
     line-height: 15px;
+    margin-left: 7rem;
   }
 
   .divCont p {
     font-size: 10px;
     line-height: 25px;
+    margin-left: 11rem;
   }
 
   .cardsCont h1 {
@@ -254,11 +256,13 @@
   .divCont h2 {
     font-size: 15px;
     line-height: 15px;
+    margin-left: 4rem;
   }
 
   .divCont p {
     font-size: 14px;
     line-height: 30px;
+    margin-left: 7rem;
   }
 
   .cardsCont h1 {
@@ -318,11 +322,13 @@
   .divCont h2 {
     font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (1600 - 300)));
     line-height: 20px;
+    margin-left: 5rem;
   }
 
   .divCont p {
     font-size: calc(6px + (26 - 6) * ((100vw - 300px) / (1600 - 300)));
     line-height: 30px;
+    margin-left: 12rem;
   }
   .cardsCont h1 {
     font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
