@@ -14,7 +14,7 @@ const Intro = () => {
         <Grid item xs={12} sm={6}>
           <h1>Hello World!</h1>
           <h2>I am Wael, aka Mr Wii</h2>
-          <p>Front-end developer</p>
+          <p>Front-end developer.</p>
         </Grid>
         <Grid
           item
