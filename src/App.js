@@ -4,6 +4,7 @@ import Home from 'pages/home'
 import About from 'pages/about'
 import Contact from 'pages/contact'
 import NotFoundPage from 'pages/404'
+import GlobalStyle from 'styles/Global'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import ScrollToTop from 'react-router-scroll-top'
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path="*" component={NotFoundPage} />
           </Switch>
         </ScrollToTop>
+        <GlobalStyle />
       </Router>
     )
   }

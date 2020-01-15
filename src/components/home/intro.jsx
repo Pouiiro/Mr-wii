@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid'
 const Intro = () => {
   return (
     <div className="divCont">
-      <Image src={img} />
+      <Image src={img} alt="background" />
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <h1>Hello World!</h1>
@@ -32,7 +32,7 @@ const Intro = () => {
               width: '100%'
             }}
           >
-            <Image1 src={img1} />
+            <Image1 src={img1} alt="background" />
             <div
               style={{
                 position: 'absolute',

@@ -10,7 +10,7 @@ export default Brand
 const Span = styled.span`
   height: 100%;
   margin: auto 0;
-  font-family: 'Geo', sans-serif;
+  font-family: 'Geo';
   font-style: normal;
   font-weight: 500;
   font-size: 4rem;

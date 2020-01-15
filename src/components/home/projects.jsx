@@ -60,7 +60,7 @@ const Projects = () => {
           width: '100%'
         }}
       >
-        <Image1 src={img1} />
+        <Image1 src={img1} alt="background" />
         <div
           style={{
             position: 'absolute',
