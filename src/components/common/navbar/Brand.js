@@ -23,7 +23,7 @@ const Link = styled.a`
   height: 70%;
   margin: auto 0;
   @media only screen and (max-width: 600px) {
-    height: 50%;
+    height: 70%;
   }
 `
 
