@@ -19,17 +19,18 @@ const Brand = () => {
 export default Brand
 
 const Link = styled.a`
-  display: block;
-  height: 70%;
+  width: 10%;
+  height: auto;
   margin: auto 0;
   @media only screen and (max-width: 600px) {
-    height: 70%;
+    height: auto;
+    width: 35%;
   }
 `
 
 const Image = styled.img`
-  width: 22%;
+  width: 100%;
   @media only screen and (max-width: 600px) {
-    width: 50%;
+    width: 100%;
   }
 `

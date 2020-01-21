@@ -83,7 +83,7 @@ export const SEO = ({ title, type, description, location = '', readTime }) => {
       <meta name="twitter:image:src" content={`${url}${Thumbnail}`} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.google} />
-      <title>{title ? `Mr wii | ${title}` : defaultTitle}</title>
+      <title>{title ? `Mr Wii | ${title}` : defaultTitle}</title>
       {type === 'NewsArticle' && (
         <meta name="twitter:label1" value="Reading time" />
       )}
@@ -91,7 +91,7 @@ export const SEO = ({ title, type, description, location = '', readTime }) => {
         <meta name="twitter:data1" value={`${readTime} min read`} />
       )}
       {type === 'NewsArticle' && (
-        <meta name="author" content="Wael Bni" data-react-helmet="true" />
+        <meta name="author" content="Ouail Bni" data-react-helmet="true" />
       )}
       <html lang="en" dir="ltr" />
     </Helmet>

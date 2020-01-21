@@ -1,7 +1,7 @@
 module.exports = {
   defaultTitle: 'Mr Wii',
+  logo: 'https://mr-wii.com/logo-48.png',
   author: 'Ouail Bni (Mr Wii)',
-  logo: 'https://mr-wii.com/mrWii.png',
   url: 'https://mr-wii.com',
   legalName: 'Ouail Bni',
   defaultDescription:

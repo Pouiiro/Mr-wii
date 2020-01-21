@@ -37,14 +37,14 @@ const Intro = () => {
               }}
             >
               <Grid item xs={12}>
-                <NavLink to="/about" exact>
-                  <Button id="btn1">More About Me</Button>
-                </NavLink>
+                <Linku to="/about" exact>
+                  <Button>More About Me</Button>
+                </Linku>
               </Grid>
               <Grid item xs={12}>
-                <NavLink to="/contact" exact>
-                  <SecondButton id="btn2">Get In Touch</SecondButton>
-                </NavLink>
+                <Linku2 to="/contact" exact>
+                  <SecondButton>Get In Touch</SecondButton>
+                </Linku2>
               </Grid>
             </div>
           </Div1>
@@ -54,6 +54,24 @@ const Intro = () => {
   )
 }
 
+const Linku = styled(NavLink)`
+  margin-left: 30%;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    margin-left: 20%;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    margin-left: 20%;
+  }
+`
+const Linku2 = styled(NavLink)`
+  margin-left: 15%;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    margin-left: 5%;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    margin-left: 5%;
+  }
+`
 const Div1 = styled.div`
   position: relative;
   display: inline-block;
@@ -63,8 +81,6 @@ const Div1 = styled.div`
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
     margin-top: 40%;
-  }
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
   }
 `
 
@@ -77,23 +93,11 @@ const Div = styled.div`
 const SecondButton = styled(Button)`
   background-color: #492e7c;
   border: 2px solid #492e7c;
-  margin-left: 40%;
   &:hover {
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     color: #492e7c;
     border-color: transparent;
     background-color: transparent;
-  }
-  @media only screen and (min-width: 100px) and (max-width: 320px) {
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  @media only screen and (min-width: 321px) and (max-width: 600px) {
-    margin-left: 5%;
-    margin-right: auto;
-  }
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    margin-left: 46%;
   }
 `
 

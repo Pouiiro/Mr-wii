@@ -16,7 +16,6 @@ export const Button = styled.button`
   margin-bottom: 2rem;
   z-index: 1;
   position: relative;
-  margin-left: 5%;
   &:hover {
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.1);
     color: #c906fa;
@@ -25,19 +24,14 @@ export const Button = styled.button`
   }
   @media only screen and (min-width: 100px) and (max-width: 320px) {
     width: 60%;
-    margin-left: 20%;
-    margin-right: auto;
     font-size: 12px;
   }
   @media only screen and (min-width: 321px) and (max-width: 600px) {
     width: 60%;
-    margin-left: 20%;
-    margin-right: auto;
     font-size: 14px;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
     width: 45%;
-    margin-left: 0%;
     font-size: 16px;
   }
 `

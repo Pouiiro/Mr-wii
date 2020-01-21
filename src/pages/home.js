@@ -5,7 +5,7 @@ import { Layout, SEO } from 'components/common/'
 export default () => {
   return (
     <Layout>
-      <SEO title="Hello world!" type="Organization" />
+      <SEO title="Hello World!" type="Organization" />
       <Home />
     </Layout>
   )

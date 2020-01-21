@@ -3,12 +3,12 @@
     "short_name": "Mr Wii",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=Nmbdp8Q5dn",
+            "src": "/android-chrome-192x192.png?v=QEGdK80y7q",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=Nmbdp8Q5dn",
+            "src": "/android-chrome-512x512.png?v=QEGdK80y7q",
             "sizes": "512x512",
             "type": "image/png"
         }
