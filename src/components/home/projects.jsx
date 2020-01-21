@@ -35,7 +35,7 @@ const useStyles = makeStyles({
       width: '250px'
     },
     ['@media only screen and (min-width: 601px) and (max-width: 1024px)']: {
-      height: '360px'
+      height: '375px'
     },
     '& h2': {
       textAlign: 'center',
@@ -51,13 +51,16 @@ const useStyles = makeStyles({
     }
   },
   button: {
-    fontSize: '14px',
+    fontSize: '16px',
     marginLeft: 'auto',
     marginRight: 'auto',
     verticalAlign: 'middle',
     '& a': {
       textDecoration: 'none',
       color: '#267ee2'
+    },
+    ['@media only screen and (min-width: 601px) and (max-width: 1024px)']: {
+      fontSize: '12px'
     }
   },
   root: {
@@ -167,7 +170,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      More
+                      Source Code
                     </a>
                   </Button>
                   <Button
@@ -225,7 +228,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Learn More
+                      Source Code
                     </a>
                   </Button>
                 </CardActions>
