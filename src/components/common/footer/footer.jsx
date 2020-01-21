@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from 'rc-footer'
 import 'rc-footer/assets/index.css'
-import logo from 'assets/svg/logo.svg'
+import logo from 'assets/images/profile.png'
 import fb from 'assets/svg/facebook.svg'
 import ig from 'assets/svg/instagram.svg'
 import wa from 'assets/svg/whatsapp.svg'

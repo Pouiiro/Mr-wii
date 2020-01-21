@@ -1,9 +1,9 @@
 import React from 'react'
-import './style.css'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Thanks from './thanks'
-import { NavLink } from 'react-router-dom'
+import { Form, Title } from 'styles/style'
+import styled from 'styled-components'
 
 const encode = data => {
   return Object.keys(data)
@@ -27,7 +27,6 @@ class Contact extends React.Component {
         this.setState({
           done: true
         })
-        console.log(this.state)
       })
       .catch(error => alert(error))
 
@@ -39,85 +38,83 @@ class Contact extends React.Component {
     const { name, email, message } = this.state
     if (this.state.done === false) {
       return (
-        <Container>
+        <>
           <Container maxWidth="md">
-            <Typography
-              component="div"
-              style={{
-                marginTop: '15vh'
-              }}
-            >
-              <div className="thankYou">
-                <h1>Contact Me</h1>
-
-                <h2>
-                  You can find me anywhere here in my
-                  <NavLink style={{ textDecoration: 'none' }} to="/about" exact>
-                    <h3>social media</h3>
-                  </NavLink>
-                </h2>
-
-                <h2>Or you can get in touch using the form down below:</h2>
-              </div>
-            </Typography>
+            <Title>Contact Me</Title>
+            <TextHead>
+              You can find me anywhere if you contact me using my social media,
+              most of the time i'm available there.
+            </TextHead>
+            <TextHead1>Or use the form below to get in touch :</TextHead1>
           </Container>
           <Container maxWidth="md">
             <Typography
               component="div"
               style={{
                 height: '80vh'
-                // marginTop: '15vh'
               }}
             >
-              <div className="contactDiv">
-                {/* <h1>Contact Me</h1> */}
-                <form
-                  className="cf"
-                  id="contact-form"
-                  onSubmit={this.handleSubmit}
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div className="half left cf">
-                    <input
-                      type="text"
-                      id="input-name"
-                      placeholder="Full Name"
-                      name="name"
-                      value={name}
-                      onChange={this.handleChange}
-                      required
-                    />
-                    <input
-                      type="email"
-                      id="input-email"
-                      placeholder="Email address"
-                      name="email"
-                      value={email}
-                      onChange={this.handleChange}
-                      required
-                    />
-                  </div>
-
-                  <textarea
-                    name="message"
-                    type="text"
-                    id="input-message"
-                    placeholder="Message"
-                    value={message}
-                    required
-                    onChange={this.handleChange}
-                  ></textarea>
-
-                  <input type="submit" value="Send" id="input-submit" />
-                </form>
-              </div>
+              <Form onSubmit={this.handleSubmit}>
+                <input type="hidden" name="form-name" value="contact" />
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  name="name"
+                  value={name}
+                  onChange={this.handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  name="email"
+                  value={email}
+                  onChange={this.handleChange}
+                  required
+                />
+                <textarea
+                  name="message"
+                  type="text"
+                  placeholder="Message"
+                  value={message}
+                  required
+                  onChange={this.handleChange}
+                ></textarea>
+                <input type="submit" value="Send" />
+              </Form>
             </Typography>
           </Container>
-        </Container>
+        </>
       )
     } else {
-      return <Thanks />
+      return <Thanks state={this.state} />
     }
   }
 }
+
+const TextHead = styled.h2`
+  font-size: 22px;
+  margin-top: 5vh;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 12px;
+    margin-top: 3vh;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 15px;
+    margin-top: 3vh;
+  }
+`
+const TextHead1 = styled(TextHead)`
+  font-size: 24px;
+  color: #34c0a9;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    font-size: 13px;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    font-size: 16px;
+  }
+`
+
 export default Contact

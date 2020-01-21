@@ -13,8 +13,9 @@ import mrLegend from 'assets/images/mrLegend.webp'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import img1 from 'assets/images/shape3.webp'
-import styled from 'styled-components'
 import wiiro from 'assets/images/mrWii.webp'
+import { BgImg3, Header2 } from 'styles/style'
+import styled from 'styled-components'
 
 const useStyles = makeStyles({
   card: {
@@ -30,11 +31,33 @@ const useStyles = makeStyles({
       boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(231,176,255,1)'
     },
     ['@media (max-width:600px)']: {
-      height: '300px',
+      height: '320px',
       width: '250px'
     },
     ['@media only screen and (min-width: 601px) and (max-width: 1024px)']: {
-      height: '310px'
+      height: '360px'
+    },
+    '& h2': {
+      textAlign: 'center',
+      fontSize: '25px',
+      fontWeight: 'bold'
+    },
+    '& p': {
+      fontSize: 'calc(14px + (17 - 14) * ((100vw - 300px) / (1600 - 300)))',
+      textAlign: 'center'
+    },
+    '& p:hover': {
+      color: 'black'
+    }
+  },
+  button: {
+    fontSize: '14px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    verticalAlign: 'middle',
+    '& a': {
+      textDecoration: 'none',
+      color: '#267ee2'
     }
   },
   root: {
@@ -47,12 +70,12 @@ const Projects = () => {
   return (
     <Container
       maxWidth="lg"
-      className="cardsCont"
       style={{
-        marginTop: '5vh'
+        marginTop: '5vh',
+        marginBottom: '5vh'
       }}
     >
-      <h1>My Projects</h1>
+      <Header2>My Projects</Header2>
       <div
         style={{
           position: 'relative',
@@ -60,18 +83,8 @@ const Projects = () => {
           width: '100%'
         }}
       >
-        <Image1 src={img1} alt="background" />
-        <div
-          style={{
-            position: 'absolute',
-            margin: '0',
-            left: '0',
-            right: '0',
-            top: '15%',
-            width: '100%'
-          }}
-          className="cardsImg"
-        >
+        <BgImg3 src={img1} alt="background" />
+        <Div>
           <Grid container spacing={2} id="cards">
             <Grid item xs>
               <Card className={classes.card}>
@@ -85,7 +98,7 @@ const Projects = () => {
                     marginTop: '1rem'
                   }}
                   image={wiiro}
-                  title="Mr Wii"
+                  title="Mr Wii, by Shyuki"
                 />
                 <CardContent>
                   <Typography
@@ -99,7 +112,11 @@ const Projects = () => {
                 </CardContent>
 
                 <CardActions>
-                  <Button size="small" color="primary">
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
                     <a
                       href="https://github.com/Mr-Wii/mr-wii.com"
                       target="_blank"
@@ -126,7 +143,7 @@ const Projects = () => {
                   title="Mr Todo"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography gutterBottom variant="h2" component="h2">
                     Mr Todo
                   </Typography>
                   <Typography
@@ -139,18 +156,25 @@ const Projects = () => {
                     cake.
                   </Typography>
                 </CardContent>
-
                 <CardActions>
-                  <Button size="small" color="primary">
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
                     <a
                       href="https://github.com/Mr-Wii/Mr-Todo"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Learn More
+                      More
                     </a>
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
                     <a
                       href="https://thirsty-dubinsky-de0f0a.netlify.com/"
                       target="_blank"
@@ -177,7 +201,7 @@ const Projects = () => {
                   title="Andzoa"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography gutterBottom variant="h2" component="h2">
                     Andzoa
                   </Typography>
                   <Typography
@@ -191,7 +215,11 @@ const Projects = () => {
                 </CardContent>
 
                 <CardActions>
-                  <Button size="small" color="primary">
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
+                  >
                     <a
                       href="https://github.com/Mr-Wii/Andoza"
                       target="_blank"
@@ -218,7 +246,7 @@ const Projects = () => {
                   title="Mr Legend"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="h2">
+                  <Typography gutterBottom variant="h2" component="h2">
                     Mr Legend
                   </Typography>
                   <Typography
@@ -230,32 +258,31 @@ const Projects = () => {
                     for a certain game (League of Legends).
                   </Typography>
                 </CardContent>
-
-                <CardActions>
-                  <p style={{ color: 'red' }}>
-                    Still W.I.P | Source Code yet to be published, soon.
-                  </p>
-                </CardActions>
+                <p style={{ color: 'black' }}>To be released soon</p>
+                <p style={{ color: 'red' }}>W.I.P</p>
               </Card>
             </Grid>
           </Grid>
-        </div>
+        </Div>
       </div>
     </Container>
   )
 }
 
-const Image1 = styled.img`
-  width: 60%;
-  margin-left: 19%;
-  margin-right: auto;
-
-  @media (max-width: 600px) {
-    display: none;
+const Div = styled.div`
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 15%;
+  width: 100%;
+  @media only screen and (min-width: 100px) and (max-width: 320px) {
+    position: static !important;
+  }
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
+    position: static !important;
   }
   @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    width: 80%;
-    margin-left: 12%;
   }
 `
 

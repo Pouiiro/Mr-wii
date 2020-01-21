@@ -1,0 +1,19 @@
+{
+    "name": "Mr Wii",
+    "short_name": "Mr Wii",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=Nmbdp8Q5dn",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=Nmbdp8Q5dn",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}
