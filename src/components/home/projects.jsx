@@ -261,15 +261,21 @@ const Projects = () => {
                     for a certain game (League of Legends).
                   </Typography>
                 </CardContent>
-                <Button size="small" color="primary" className={classes.button}>
-                  <a
-                    href="https://github.com/Mr-Wii/mr-legend"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <CardActions>
+                  <Button
+                    size="small"
+                    color="primary"
+                    className={classes.button}
                   >
-                    Source Code
-                  </a>
-                </Button>
+                    <a
+                      href="https://github.com/Mr-Wii/mr-legend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source Code
+                    </a>
+                  </Button>
+                </CardActions>
               </Card>
             </Grid>
           </Grid>
