@@ -31,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
   }
   ::-webkit-scrollbar-thumb {
     background: #FF0000;
+  }
 }
 `
 

@@ -261,8 +261,15 @@ const Projects = () => {
                     for a certain game (League of Legends).
                   </Typography>
                 </CardContent>
-                <p style={{ color: 'black' }}>To be released soon</p>
-                <p style={{ color: 'red' }}>W.I.P</p>
+                <Button size="small" color="primary" className={classes.button}>
+                  <a
+                    href="https://github.com/Mr-Wii/mr-legend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Source Code
+                  </a>
+                </Button>
               </Card>
             </Grid>
           </Grid>
