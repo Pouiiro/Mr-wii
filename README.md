@@ -1,3 +1,3 @@
-## https://mr-wii.com/
+## https://mr-wii.netlify.app/
 
 My personal website
